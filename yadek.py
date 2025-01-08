@@ -32,24 +32,42 @@ st.markdown("<h1 style='text-align: center; color: black ; font-size: 19px ;'><e
 listofmed = ['Amoxycillin','Augmentin','Dicloxacilin','Paracetamol']
 
 
+
+def check_int(a) :
+    if int(a) == float(a):
+        return int(a)
+    else:
+        return a 
+    
+    
+    
+    
 col1, col2, col3, col4  = st.columns([1,1,1,1])
 
 with col1:
-    age = st.text_input("อายุ(ปี)", key='age',value= None, label_visibility= "collapsed") 
+    age = st.text_input("อายุ(ปี)", key='age',value= None) 
 
 
 with col2:
-    kg = st.text_input("น้ำหนัก(kg)", value= None , key='kg' ,label_visibility= "collapsed")   
+    kg = st.text_input("น้ำหนัก(kg)", value= None , key='kg' )   
     
 
 with col3:
     med = st.selectbox("ชื่อยา",(listofmed),index=0, key ='med')
     
 with col4:
+    blank = st.write("")
+    blank1 = st.write("")
     but = st.button("คำนวณ", key='calculate')
     
     
     
 if but:
     if med == 'Amoxycillin':
-        print('ok')
+        st.code(f'{check_int(float(kg)*0.4) :.1f} cc-{check_int(float(kg)*0.66) :.2f} cc po tid pc')
+        
+    elif med == 'Paracetamol':
+        st.code('OK')
+        
+    else:
+        pass
