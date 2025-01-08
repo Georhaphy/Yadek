@@ -37,7 +37,7 @@ def check_int(a) :
     if int(a) == float(a):
         return int(a)
     else:
-        return a 
+        return f'{a:.1f}'
     
     
     
@@ -64,7 +64,7 @@ with col4:
     
 if but:
     if med == 'Amoxycillin':
-        st.code(f'{check_int(float(kg)*0.4) :.1f} cc-{check_int(float(kg)*0.66) :.1f} cc po tid pc')
+        st.code(f'{check_int(float(kg)*0.4)} cc-{check_int(float(kg)*0.66)} cc po tid pc')
         
     elif med == 'Paracetamol':
         st.code('OK')
