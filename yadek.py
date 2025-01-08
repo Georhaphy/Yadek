@@ -29,7 +29,7 @@ st.markdown("<h1 style='text-align: center; color: black ; font-size: 40px ;'>Sa
 st.markdown("<h1 style='text-align: center; color: black ; font-size: 19px ;'><em>Good precise Good using</em></h1>", unsafe_allow_html=True)
 
 
-listofmed = ['Amoxycillin','Augmentin','Dicloxacilin','Paracetamol']
+listofmed = ['Amoxycillin','Augmentin','Dicloxacilin','Paracetamol', 'Erythromycin']
 
 
 
@@ -72,3 +72,10 @@ if but:
         
     elif med == 'Augmentin':
         st.code(f'{check_int(float(kg)*0.273)} cc-{check_int(float(kg)*0.492)} cc po bid pc (228.5mg/5ml)')
+
+    elif med == 'Dicloxacilin':
+        st.code(f'{check_int(float(kg)*0.25)} cc-{check_int(float(kg)*0.5)} cc po q 6 hr (62.5mg/5ml)')
+    
+    elif med == 'Erythromycin':
+        st.code(f'{check_int(float(kg)*0.4)} cc-{check_int(float(kg)*0.67)} cc po tid pc (125mg/5ml)')
+        
