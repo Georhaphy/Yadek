@@ -64,7 +64,7 @@ with col4:
     
 if but:
     if med == 'Amoxycillin':
-        st.code(f'{check_int(float(kg)*0.4) :.1f} cc-{check_int(float(kg)*0.66) :.2f} cc po tid pc')
+        st.code(f'{check_int(float(kg)*0.4) :.1f} cc-{check_int(float(kg)*0.66) :.1f} cc po tid pc')
         
     elif med == 'Paracetamol':
         st.code('OK')
