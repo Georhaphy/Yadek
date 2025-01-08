@@ -38,7 +38,7 @@ with col1:
     yr = st.write("อายุ")
     
 with col2:
-    age = st.text_input("**", key='age',value= None, label_visibility= "collapsed") 
+    age = st.text_input("อายุ(ปี)", key='age',value= None, label_visibility= "collapsed") 
 
 with col3:
     yr1 = st.write("ปี")
@@ -47,7 +47,7 @@ with col4:
     bw = st.write("น้ำหนัก")
     
 with col5:
-    kg = st.text_input("**", value= None , key='kg' ,label_visibility= "collapsed")   
+    kg = st.text_input("น้ำหนัก(kg)", value= None , key='kg' ,label_visibility= "collapsed")   
     
 with col6:
     bw1 = st.write("กิโล")
