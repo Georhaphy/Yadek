@@ -64,10 +64,11 @@ with col4:
     
 if but:
     if med == 'Amoxycillin':
-        st.code(f'{check_int(float(kg)*0.4)} cc-{check_int(float(kg)*0.66)} cc po tid pc')
-        
+        st.code(f'{check_int(float(kg)*0.4)} cc-{check_int(float(kg)*0.66)} cc po tid pc (125mg/5ml)')
+        st.code(f'{check_int(float(kg)*0.2)} cc-{check_int(float(kg)*0.33)} cc po tid pc (250mg/5ml)')
+    
     elif med == 'Paracetamol':
-        st.code('OK')
+        st.code(f'{check_int(float(kg)*0.416)} cc-{check_int(float(kg)*0.625)} cc po q 4-6 hr (120mg/5ml)')
         
-    else:
-        pass
+    elif med == 'Augmentin':
+        st.code(f'{check_int(float(kg)*0.273)} cc-{check_int(float(kg)*0.492)} cc po bid pc (228.5mg/5ml)')
