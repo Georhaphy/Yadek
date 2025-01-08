@@ -32,30 +32,20 @@ st.markdown("<h1 style='text-align: center; color: black ; font-size: 19px ;'><e
 listofmed = ['Amoxycillin','Augmentin','Dicloxacilin','Paracetamol']
 
 
-col1, col2, col3, col4, col5, col6, col7, col8   = st.columns([0.5,1,0.5,1,1,0.5,2,2])
+col1, col2, col3, col4  = st.columns([1,1,1,1])
 
 with col1:
-    yr = st.write("อายุ")
-    
-with col2:
     age = st.text_input("อายุ(ปี)", key='age',value= None, label_visibility= "collapsed") 
 
-with col3:
-    yr1 = st.write("ปี")
-    
-with col4:
-    bw = st.write("น้ำหนัก")
-    
-with col5:
+
+with col2:
     kg = st.text_input("น้ำหนัก(kg)", value= None , key='kg' ,label_visibility= "collapsed")   
     
-with col6:
-    bw1 = st.write("กิโล")
-    
-with col7:
+
+with col3:
     med = st.selectbox("ชื่อยา",(listofmed),index=0, key ='med')
     
-with col8:
+with col4:
     but = st.button("คำนวณ", key='calculate')
     
     
