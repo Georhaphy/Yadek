@@ -29,7 +29,7 @@ st.markdown("<h1 style='text-align: center; color: black ; font-size: 40px ;'>Sa
 st.markdown("<h1 style='text-align: center; color: black ; font-size: 19px ;'><em>Good precise Good using</em></h1>", unsafe_allow_html=True)
 
 
-listofmed = ['Amoxycillin','Augmentin','Buscopan','Dicloxacilin','Erythromycin','Paracetamol','Salbutamol']
+listofmed = ['Amoxycillin','Augmentin','Azithromycin','Buscopan','Dicloxacilin','Erythromycin','Paracetamol','Salbutamol']
 
 
 
@@ -71,7 +71,7 @@ if but:
         st.code(f'{check_int(float(kg)*0.416)} cc-{check_int(float(kg)*0.625)} cc po q 4-6 hr (120mg/5ml)')
         
     elif med == 'Augmentin':
-        st.code(f'{check_int(float(kg)*0.273)} cc-{check_int(float(kg)*0.492)} cc po bid pc (228.5mg/5ml)')
+        st.code(f'{check_int(float(kg)*0.438)} cc-{check_int(float(kg)*0.492)} cc po bid pc (228.5mg/5ml)')
 
     elif med == 'Dicloxacilin':
         st.code(f'{check_int(float(kg)*0.25)} cc-{check_int(float(kg)*0.5)} cc po q 6 hr (62.5mg/5ml)')
@@ -92,3 +92,6 @@ if but:
             st.code(f'{check_int(float(kg)*0.25)} cc-{check_int(float(kg)*0.5)} cc po tid pc (2mg/5ml)')
         else:
             st.code('5 cc po tid pc (2mg/5ml)')
+            
+    elif med == 'Azithromycin':
+        st.code(f'{check_int(float(kg)*0.25)} cc po OD (200mg/5ml)')
