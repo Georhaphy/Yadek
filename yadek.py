@@ -71,7 +71,7 @@ if but:
         st.code(f'{check_int(float(kg)*0.416)} cc-{check_int(float(kg)*0.625)} cc po q 4-6 hr (120mg/5ml)')
         
     elif med == 'Augmentin':
-        st.code(f'{check_int(float(kg)*0.438)} cc-{check_int(float(kg)*0.492)} cc po bid pc (228.5mg/5ml)')
+        st.code(f'{check_int(float(kg)*0.625)} cc po bid pc (228.5mg/5ml)')
 
     elif med == 'Dicloxacilin':
         st.code(f'{check_int(float(kg)*0.25)} cc-{check_int(float(kg)*0.5)} cc po q 6 hr (62.5mg/5ml)')
