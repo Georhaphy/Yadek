@@ -26,7 +26,7 @@ st.markdown(background_image, unsafe_allow_html=True)
 
 
 st.markdown("<h1 style='text-align: center; color: black ; font-size: 40px ;'>Sakhon Yadek</h1>", unsafe_allow_html=True)
-st.markdown("<h1 style='text-align: center; color: black ; font-size: 19px ;'><em>Good precise Good using</em></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black ; font-size: 19px ;'><em>Good precision Good using</em></h1>", unsafe_allow_html=True)
 
 
 listofmed = ['Amoxycillin','Augmentin','Azithromycin','Buscopan','Dicloxacilin','Erythromycin','Paracetamol','Salbutamol']
